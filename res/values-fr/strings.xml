@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Apple Farmer Alpha</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="nouvelle_partie">Jeu</string>
+    <string name="parametres">Paramètres</string>
+    <string name="quitter">Quitter</string>
+    <string name="vibreur">Vibreur</string>
+    <string name="son">Son</string>
+    <string name="pomme">Pomme</string>
+    <string name="sucre">Sucre</string>
+    <string name="temperature">Température</string>
+    <string name="duree">Durée</string>
+    <string name="compteur_pomme">Compteur de pommes</string>
+    <string name="splash_screen">Ecran chargement</string>
+    <string name="compteur_sucre">Compteur de sucre</string>
+    <string name="compteur_fut">Compteur de fûts</string>
+    <string name="carte">Carte</string>
+    <string name="amelioration">Amélioration</string>
+    <string name="fabrication">Fabriquer</string>
+    <string name="usine">Usine</string>
+    <string name="reinitialiser">Réinitialiser</string>
+    <string name="Pps">P/s : </string>
+    <string name="statistiques">Statistiques</string>
+    <string name="stats_pps">Nombre de P/s : </string>
+    <string name="stats_nbprecoltees">Pommes récoltées : </string>
+    <string name="stats_ptotales">Pommes totales récoltées : </string>
+    <string name="stats_ppclics">Nombre de P/c : </string>
+    <string name="stats_pcliquees">Pommes cliquées : </string>
+</resources>

@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_vierge"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MenuJeu" >
+
+    <ImageView 
+        android:id="@+id/compteurPomme"
+        android:contentDescription="@string/compteur_pomme"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_launcher"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    
+    <TextView 
+        android:id="@+id/nbPommes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/compteurPomme"
+        android:text=""
+        android:textSize="21sp" />
+    
+	<ImageView 
+        android:id="@+id/compteurSucre"
+        android:contentDescription="@string/compteur_sucre"
+        android:layout_toRightOf="@id/nbPommes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sacsucre"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <TextView 
+        android:id="@+id/nbSucre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/compteurSucre"
+        android:text=""
+        android:textSize="21sp" />
+
+	<ImageView 
+        android:id="@+id/compteurFut"
+        android:contentDescription="@string/compteur_fut"
+        android:layout_toRightOf="@id/nbSucre"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tonneau"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+	
+	<TextView 
+        android:id="@+id/nbFut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/compteurFut"
+        android:text=""
+        android:textSize="21sp" />
+    
+	<ImageButton 
+        android:id="@+id/parametres"
+        android:contentDescription="@string/parametres"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/parametres"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+	
+	<ImageButton 
+        android:id="@+id/statistiques"
+        android:contentDescription="@string/statistiques"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/parametres"
+        android:background="@drawable/statistiques"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    
+    <ImageButton
+        android:id="@+id/pommeCentrale"
+        android:contentDescription="@string/pomme"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pommeclictest" />
+    
+    <TextView 
+        android:id="@+id/nbPommesParSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pommeCentrale"
+        android:layout_centerInParent="true"
+        android:text="@string/Pps"
+        android:textSize="21sp" />
+
+	<TextView 
+        android:id="@+id/nbPommesSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pommeCentrale"
+        android:layout_toRightOf="@id/nbPommesParSec"
+        android:text=""
+        android:textSize="21sp" />
+    
+	<TextView
+        android:id="@+id/carte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/carte"
+        android:textSize="26sp"
+        android:onClick="clickCarte"
+        android:clickable="true" />
+	
+	<TextView
+        android:id="@+id/amelioration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/amelioration"
+        android:textSize="26sp"
+        android:onClick="clickAmelioration"
+        android:clickable="true" />
+		
+	<TextView
+        android:id="@+id/usine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/usine"
+        android:textSize="26sp"
+        android:onClick="clickUsine"
+        android:clickable="true" />
+
+</RelativeLayout>

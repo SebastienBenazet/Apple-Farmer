@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.applefarmeralpha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoActionBar" >
+        <activity
+            android:name="com.example.applefarmeralpha.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.ActiviteParametres"
+            android:label="@string/title_activity_activite_parametres" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuJeu"
+            android:label="@string/title_activity_menu_jeu" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuCarte"
+            android:label="@string/title_activity_menu_carte" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuAmelioration"
+            android:label="@string/title_activity_menu_amelioration" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuUsine"
+            android:label="@string/title_activity_menu_usine" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuStatistiques"
+            android:label="@string/title_activity_menu_statistiques" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.SplashScreen"
+            android:label="@string/title_activity_splash_screen" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.SplashActivity"
+            android:label="@string/title_activity_splash" >
+        </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuDemarrer"
+            android:label="@string/title_activity_menu_demarrer" >
+        </activity>
+    </application>
+
+</manifest>

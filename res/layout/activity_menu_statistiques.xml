@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_vierge"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MenuStatistiques" >
+
+    <TextView 
+        android:id="@+id/statistiques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/statistiques"
+        android:textSize="45sp" />
+    
+	<TextView 
+        android:id="@+id/stats_pps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statistiques"
+        android:text="@string/stats_pps"
+        android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/nbPommesSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statistiques"
+        android:layout_toRightOf="@id/stats_pps"
+        android:text=""
+        android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/stats_ppclics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stats_pps"
+        android:text="@string/stats_ppclics"
+        android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/nbPommesParClic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stats_pps"
+        android:layout_toRightOf="@id/stats_ppclics"
+        android:text=""
+        android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/stats_nbprecoltees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stats_ppclics"
+        android:text="@string/stats_nbprecoltees"
+        android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/nbPommes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nbPommesParClic"
+        android:layout_toRightOf="@id/stats_nbprecoltees"
+        android:text=""
+        android:textSize="21sp" />
+
+</RelativeLayout>

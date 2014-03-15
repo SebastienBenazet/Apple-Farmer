@@ -1,0 +1,200 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgroundusine"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MenuUsine" >
+    
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+    
+    <ImageView 
+        android:id="@+id/compteurPomme"
+        android:contentDescription="@string/compteur_pomme"
+        android:background="@drawable/ic_launcher"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    
+    <TextView 
+        android:id="@+id/nbPommes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/compteurPomme"
+        android:text=""
+        android:textSize="21sp" />
+    
+	<ImageView 
+        android:id="@+id/compteurSucre"
+        android:contentDescription="@string/compteur_sucre"
+        android:layout_toRightOf="@id/nbPommes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sacsucre"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <TextView 
+        android:id="@+id/nbSucre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/compteurSucre"
+        android:text=""
+        android:textSize="21sp" />
+    
+    <ImageView 
+        android:id="@+id/compteurFut"
+        android:contentDescription="@string/compteur_fut"
+        android:layout_toRightOf="@id/nbSucre"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tonneau"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+	
+	<TextView 
+        android:id="@+id/nbFut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/compteurFut"
+        android:paddingRight="26dip"
+        android:text=""
+        android:textSize="21sp" />
+	
+ </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+    </TableRow>
+ 
+  
+	
+	
+	<TableRow
+         android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+    <ImageView 
+        android:id="@+id/usinePomme"
+        android:contentDescription="@string/pomme"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/compteurPomme"
+        android:background="@drawable/pomme_hd"
+        android:layout_width="30dp"
+        android:layout_height="70dp" />
+ 
+     <EditText
+	    android:id="@+id/usineTextPomme"
+	    android:contentDescription="@string/pomme"
+	    android:layout_span="6"
+	    android:inputType="number"
+	    android:singleLine="true" />
+     </TableRow>
+     
+	<TableRow
+         android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+   <ImageView 
+        android:id="@+id/usineSucre"
+        android:contentDescription="@string/sucre"
+        android:layout_below="@id/tableRow1"
+        android:background="@drawable/sacsucre"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        />
+ 
+     <EditText
+	    android:id="@+id/usineTextSucre"
+	    android:contentDescription="@string/sucre"
+	    	    android:layout_span="6"
+	    android:inputType="number"
+	    android:singleLine="true" />
+     </TableRow>
+     
+	<TableRow>
+	    android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+	    
+	    <ImageView 
+        android:id="@+id/usineTemperature"
+        android:contentDescription="@string/temperature"
+       
+        android:background="@drawable/termometre"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginTop="25sp" />
+	
+	<EditText
+	    android:id="@+id/usineTextTemperature"
+	    android:contentDescription="@string/temperature"
+	    android:layout_span="6"
+	    android:layout_marginTop="25sp"
+	    android:inputType="number"
+	    android:singleLine="true" />
+	</TableRow>
+	
+	
+
+	
+	
+	
+		
+	<TableRow >
+	    <ImageView 
+        android:id="@+id/usineDuree"
+        android:contentDescription="@string/duree"
+        android:background="@drawable/duree"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25sp" />
+	
+	<EditText
+	    android:id="@+id/usineTextDuree"
+	    android:contentDescription="@string/duree"
+	    android:layout_toRightOf="@id/usineDuree"
+	    android:layout_span="6"
+	    android:layout_marginTop="45sp"
+	    android:inputType="number"
+	    android:singleLine="true" />
+	
+	
+	</TableRow>
+	
+	<TableRow>
+	    <Button
+        android:id="@+id/fabrication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerInParent="true"
+        android:text="@string/fabrication"
+        android:textSize="26sp"
+        android:onClick="clickFabrication"
+        android:clickable="true" /> 
+	</TableRow>
+			
+	
+        
+        
+		
+		
+</TableLayout>

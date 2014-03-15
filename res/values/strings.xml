@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Apple Farmer Alpha</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activite_parametres">ActiviteParametres</string>
+    <string name="title_activity_menu_jeu">MenuJeu</string>
+    <string name="title_activity_menu_carte">MenuCarte</string>
+    <string name="title_activity_menu_amelioration">MenuAmelioration</string>
+    <string name="title_activity_menu_usine">MenuUsine</string>
+    <string name="title_activity_menu_statistiques">MenuStatistiques</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_menu_demarrer">MenuDemarrer</string>
+
+</resources>
