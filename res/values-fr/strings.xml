@@ -18,6 +18,7 @@
     <string name="compteur_fut">Compteur de fûts</string>
     <string name="carte">Carte</string>
     <string name="amelioration">Amélioration</string>
+    <string name="batiment">Bâtiment</string>
     <string name="fabrication">Fabriquer</string>
     <string name="usine">Usine</string>
     <string name="reinitialiser">Réinitialiser</string>

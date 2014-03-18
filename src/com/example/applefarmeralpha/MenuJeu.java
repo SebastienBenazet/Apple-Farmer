@@ -169,7 +169,6 @@ public class MenuJeu extends Activity {
 	//lorsque le boutton "Carte" est clické
 	public void clickCarte(View v) {
 		Intent intent = new Intent(this, MenuCarte.class);
-		
 		startActivity(intent);
 	}
 	

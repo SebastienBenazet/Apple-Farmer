@@ -366,8 +366,7 @@ public class MenuAmelioration extends Activity {
 	    // Référence et intégration de nos images
 	    private Integer[] mThumbIds = {
 	            R.drawable.sacsucre, R.drawable.tartepomme,
-	            R.drawable.fermier, R.drawable.pluie,
-	            R.drawable.ameliorationusine
+	            R.drawable.fermier, R.drawable.pluie
 	    };
 	}
 }

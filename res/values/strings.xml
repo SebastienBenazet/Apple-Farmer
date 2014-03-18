@@ -13,5 +13,6 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_menu_demarrer">MenuDemarrer</string>
+    <string name="title_activity_menu_amelioration_carte">MenuAmeliorationCarte</string>
 
 </resources>

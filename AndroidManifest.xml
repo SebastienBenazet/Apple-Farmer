@@ -60,6 +60,10 @@
             android:name="com.example.applefarmeralpha.MenuDemarrer"
             android:label="@string/title_activity_menu_demarrer" >
         </activity>
+        <activity
+            android:name="com.example.applefarmeralpha.MenuAmeliorationCarte"
+            android:label="@string/title_activity_menu_amelioration_carte" >
+        </activity>
     </application>
 
 </manifest>

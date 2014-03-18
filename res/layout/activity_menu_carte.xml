@@ -61,5 +61,16 @@
         android:layout_toRightOf="@id/compteurFut"
         android:text=""
         android:textSize="21sp" />
+	
+	<TextView
+        android:id="@+id/ameliorationCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/batiment"
+        android:textSize="26sp"
+        android:onClick="clickAmeliorationCarte"
+        android:clickable="true" />
     
 </RelativeLayout>
