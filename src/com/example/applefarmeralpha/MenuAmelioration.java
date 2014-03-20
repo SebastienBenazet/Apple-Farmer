@@ -367,6 +367,20 @@ public class MenuAmelioration extends Activity {
 	    private Integer[] mThumbIds = {
 	            R.drawable.sacsucre, R.drawable.tartepomme,
 	            R.drawable.fermier, R.drawable.pluie
+	            //crumble au pommes
+	            //compote de pomme
+	            //salade de fruit
+	            //smoothie
+	            //pomme d'amour
+	            //cake au pommes
+	            //salade de pommes
+	            //4 quarts aux pommes
+	            //clafoutis aux pommes
+	            //cocktail aux pommes
+	            //tarte tatin
+	            //compote de pommes
+	            //jus de pommes
+	            //tartelettes aux pommes
 	    };
 	}
 }

@@ -189,7 +189,7 @@ public class MenuJeu extends Activity {
 		    Context context = getApplicationContext();
 		    int duration = Toast.LENGTH_SHORT;
 			//On indique au joueur qu'il ne possède pas l'usine
-        	Toast toast = Toast.makeText(context, "Achetez l'usine d'abord", duration);
+        	Toast toast = Toast.makeText(context, "Achetez l'usine dans la carte", duration);
         	toast.show();
 		}
 	}
