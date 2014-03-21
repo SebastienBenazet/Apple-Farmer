@@ -70,5 +70,22 @@
         android:layout_toRightOf="@id/stats_nbprecoltees"
         android:text=""
         android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/stats_nbptotales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stats_nbprecoltees"
+        android:text="@string/stats_ptotales"
+        android:textSize="21sp" />
+	
+	<TextView 
+        android:id="@+id/nbPommesTotales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nbPommes"
+        android:layout_toRightOf="@id/stats_nbptotales"
+        android:text=""
+        android:textSize="21sp" />
 
 </RelativeLayout>

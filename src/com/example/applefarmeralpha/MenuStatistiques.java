@@ -30,6 +30,9 @@ public class MenuStatistiques extends Activity {
 		//Affichage du nombre de pommes quand l'activité commence
 		TextView textPommes = (TextView) findViewById(R.id.nbPommes);
 		textPommes.setText(Integer.toString(ressources.getInt(MenuJeu.NB_POMMES, 0)));
+		//Affichage du nombre de pommes quand l'activité commence
+		TextView textPommesTotales = (TextView) findViewById(R.id.nbPommesTotales);
+		textPommesTotales.setText(Integer.toString(ressources.getInt(MenuJeu.NB_POMMES_TOTALES, 0)));
 		//Affichage du nombre de pommes par secondes quand l'activité commence
 		TextView textPommesClic = (TextView) findViewById(R.id.nbPommesParClic);
 		textPommesClic.setText(Integer.toString(ressources.getInt(MenuJeu.POMMES_PAR_CLIC, 0)));

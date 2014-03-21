@@ -42,39 +42,15 @@ public class MenuJeu extends Activity {
 		
 		//On lit (ou crée, s'il n'existe pas) le fichier de préférences PREF_PARAMS
 		final SharedPreferences ressources = getSharedPreferences(RESSOURCES, MODE_PRIVATE);
-		if(!ressources.contains(POMMES_PAR_CLIC)){
-			SharedPreferences.Editor e = ressources.edit();
-			e.putInt(POMMES_PAR_CLIC, 1);
-			e.commit();
-		}
-		if(!ressources.contains(NB_POMMES)){
-			SharedPreferences.Editor e = ressources.edit();
-			e.putInt(NB_POMMES, 0);
-			e.commit();
-		}
-		if(!ressources.contains(NB_SUCRE)){
-			SharedPreferences.Editor e = ressources.edit();
-			e.putInt(NB_SUCRE, 0);
-			e.commit();
-		}
-		if(!ressources.contains(NB_FUT)){
-			SharedPreferences.Editor e = ressources.edit();
-			e.putInt(NB_FUT, 0);
-			e.commit();
-		}
-		if(!ressources.contains(NB_POMMES_TOTALES)){
-			SharedPreferences.Editor e = ressources.edit();
-			e.putInt(NB_POMMES_TOTALES, 0);
-			e.commit();
-		}
-		if(!ressources.contains(NB_POMMES_SECONDE)){
-			SharedPreferences.Editor e = ressources.edit();
-			e.putInt(NB_POMMES_SECONDE, 0);
-			e.commit();
-		}
-		if(!ressources.contains(POSSEDE_USINE)){
+		if(!ressources.contains(POSSEDE_USINE) && !ressources.contains(NB_POMMES_SECONDE) && !ressources.contains(NB_POMMES_TOTALES) && !ressources.contains(NB_FUT) && !ressources.contains(NB_SUCRE) && !ressources.contains(NB_POMMES) && !ressources.contains(POMMES_PAR_CLIC)){
 			SharedPreferences.Editor e = ressources.edit();
 			e.putInt(POSSEDE_USINE, 0);
+			e.putInt(NB_POMMES_SECONDE, 0);
+			e.putInt(NB_POMMES_TOTALES, 0);
+			e.putInt(NB_FUT, 0);
+			e.putInt(NB_SUCRE, 0);
+			e.putInt(NB_POMMES, 0);
+			e.putInt(POMMES_PAR_CLIC, 1);
 			e.commit();
 		}
 		
@@ -154,6 +130,7 @@ public class MenuJeu extends Activity {
 				public void run() {
 					SharedPreferences.Editor e = ressources.edit();
 					e.putInt(NB_POMMES, ressources.getInt(NB_POMMES, 0) + ressources.getInt(NB_POMMES_SECONDE, 0));
+					e.putInt(NB_POMMES_TOTALES, ressources.getInt(NB_POMMES_TOTALES, 0) + ressources.getInt(NB_POMMES_SECONDE, 1));
 					e.commit();
 					//Affichage du nombre de pommes quand l'activité commence
        				TextView textPommes = (TextView) findViewById(R.id.nbPommes);
